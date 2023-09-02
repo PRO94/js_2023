@@ -33,3 +33,12 @@ const arrayMixed = ['a', 1, true, undefined];   // it could contains everything
 // array.forEach(element => {
 //     console.log(element);
 // });
+
+// Correct way to push a new item in an array
+// array.push(34);
+
+// Removing items from an array
+// console.log(array)      // before removing
+// var index = 3;
+// array.splice(index, 1); // it will start removing items starting with index = 3 and amount of items = 1. Result is an updated array without removed items
+// console.log(array)      // after removing
