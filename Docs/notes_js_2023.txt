@@ -1,3 +1,7 @@
 URL JS:
 https://developer.mozilla.org/en-US/docs/Web/JavaScript
 
+Working with DOM and scripts: 
+if we put <script> to the head and trying to get access to some html element in the script - we will receive null value for that element because we're trying to get access to the html which is not loaded yet. 
+So to fix the situation - need to put the script usage to the bottom of the html when it is loaded to the DOM. OR second way to fix it - need to add attribute defer:
+<script src="./app.js" defer></script>

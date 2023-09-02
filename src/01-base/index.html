@@ -10,7 +10,7 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
         crossorigin="anonymous">
     <title>01-basic</title>
-    <script src="./app.js"></script>
+    <script src="./app.js" defer></script>
 </head>
 <body class="bg-dark text-light">
     <div class="container w-50 pt-5">
@@ -21,14 +21,14 @@
             type="number"
             class="form-control mb-2"
             placeholder="First value"
-            value="11">
+            value="0">
     
         <input 
             id="secondValue"
             type="number"
             class="form-control mb-2"
             placeholder="First value"
-            value="22">
+            value="0">
     
         <div class="d-flex mb-2">
             <button id="plus" class="btn btn-success flex-grow-1 mx-2">+</button>
@@ -41,7 +41,7 @@
     
         <div class="text-bg-light p-3 text-center">
             <h4>Result:</h4>
-            <p id="result" class="mb-0">323</p>
+            <p id="result" class="mb-0"></p>
         </div>    
     </div>
 </body>
