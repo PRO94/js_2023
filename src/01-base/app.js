@@ -2,6 +2,8 @@ const firstValueElement = document.getElementById('firstValue');
 const secondValueElement = document.getElementById('secondValue');
 const plusBtn = document.getElementById('plus');
 const minusBtn = document.getElementById('minus');
+const multiplyBtn = document.getElementById('multiply');
+const divideBtn = document.getElementById('divide');
 const submitBtn = document.getElementById('submit');
 const resultElement = document.getElementById('result');
 
@@ -19,12 +21,24 @@ let action = '+';
 //console.log(typeof sum);                  // type = number
 */
 
-plusBtn.onclick = function() {
-    action = '+';
-}
+// Simplified version for functions
+plusBtn.onclick = () => action = '+';
+
+// full version for functions
+// plusBtn.ondblclick = function() {
+//     action = '+';
+// }
 
 minusBtn.onclick = function() {
     action = '-';
+}
+
+multiplyBtn.onclick = function() {
+    action = '*';
+}
+
+divideBtn.onclick = function() {
+    action = '/';
 }
 
 function printResult(result) {
@@ -47,10 +61,22 @@ function calculateNumbersWithAction(input1, input2, actionSymbol) {
     const num1 = Number(input1.value);
     const num2 = Number(input2.value);
 
+    /*
     if (actionSymbol == '+') {
         return num1 + num2;
     } else if (action == '-') {
         return num1 - num2;
+    } else if (action == '*') {
+        return num1 * num2;
+    } else if (action == '/') {
+        return num1 / num2;
+    }
+    */
+    switch(actionSymbol) {
+        case '+': return num1 + num2;
+        case '-': return num1 - num2;
+        case '*': return num1 * num2;
+        case '/': return num1 / num2;
     }
 }
 
