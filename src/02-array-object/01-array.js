@@ -18,3 +18,18 @@ const arrayMixed = ['a', 1, true, undefined];   // it could contains everything
 // Bad practice
 // array[array.length] = 333;           // it will add a new value in the end of the array, but it's bad practice
 // console.log(array[array.length-1])
+
+// Cycle
+// for(let i = 0; i < array.length; i++)
+// {
+//     console.log(array[i]);
+// }
+
+// for(let element of array)
+// {
+//     console.log(element);
+// }
+
+// array.forEach(element => {
+//     console.log(element);
+// });
