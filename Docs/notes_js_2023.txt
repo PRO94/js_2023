@@ -1,7 +1,15 @@
 URL JS:
 https://developer.mozilla.org/en-US/docs/Web/JavaScript
 
+run js file in terminal
+node fileName
+(need to navigate to the folder with files or absolute path to the file):
+node 01-variables.js
+or:
+node E:\IT\Studying\JS\2023\full_js_2023\src\01-base\01-variables.js
+
 Working with DOM and scripts: 
 if we put <script> to the head and trying to get access to some html element in the script - we will receive null value for that element because we're trying to get access to the html which is not loaded yet. 
 So to fix the situation - need to put the script usage to the bottom of the html when it is loaded to the DOM. OR second way to fix it - need to add attribute defer:
 <script src="./app.js" defer></script>
+
