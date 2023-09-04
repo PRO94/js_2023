@@ -1,3 +1,4 @@
+// ========== Work with strings
 // const name = 'Roman'
 // const age = 28;
 
