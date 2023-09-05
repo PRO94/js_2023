@@ -13,3 +13,5 @@ if we put <script> to the head and trying to get access to some html element in 
 So to fix the situation - need to put the script usage to the bottom of the html when it is loaded to the DOM. OR second way to fix it - need to add attribute defer:
 <script src="./app.js" defer></script>
 
+Debugging js app:
+Need to use "debugger" key-word to stop the application in the exact place. So you will be able to check tnhe state of variables etc.
