@@ -72,3 +72,5 @@
 // }
 // addLastName = createPerson('Roman');    // Result is a function with some scope where firstName is alway present there and we can't change it
 // addLastName('Pro');
+
+// Pure function - is a function that operates only with its internal parameters and doesn't depend on external ones
